@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrola</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="vitrolaContainer">
+        <div class="discoContainer">
+            <img id="vinil" src="./assets/vinyl.png">
+        </div>
+        <div class="agulhaContainer">
+            <img id="agulha" src="./assets/agulha.png">
+        </div>
+        <div class="controlesContainer">
+            <img class="buttons" onclick="play()" src="./assets/play.svg">
+            <img class="buttons" onclick="pause()" src="./assets/pause.svg">
+            <img class="buttons" onclick="stop()" src="./assets/stop.svg">
+        </div>
+        <div class="volumeContainer">
+            <input type="range" id="volume" step="0.1" min="0" max="10" value="1" oninput="volume(this.value)">
+        </div>
+    </div>
+    <div class="music">
+        <audio id="music" src="./assets/America the Beautiful - United States Marine Band.mp3"
+            type="audio/mpeg"></audio>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #03070A;
+}
+
+.vitrolaContainer {
+    position: relative;
+    width: 92vmin;
+    height: 65vmin;
+    margin-top: 8%;
+    background-image: linear-gradient(180deg, #353336, #1C1C1D);
+    border-radius: 5px;
+    box-shadow: #3c3a3d 6px 2px 16px 0px, #1C1C1D -6px -2px 16px 0px, 
+    #434144 3px 3px 10px 0px inset, #2b292c -3px -3px 6px 1px inset;
+}
+
+#vinil {
+    position: absolute;
+    height: 90%;
+    top: 5%;
+    left: 23%;
+    transform: rotate(0deg);
+}
+
+#agulha {
+    position: absolute;
+    height: 90%;
+    top: 1%;
+    right: 5%;
+    transform: rotate(0deg);
+    transition: 1.5s all;
+}
+
+.controlesContainer {
+    position: relative;
+    top: 10%;
+    left: 5%;
+    margin: 0;
+    width: 10%;
+    height: 50%;
+}
+
+.buttons {
+    position: relative;
+    cursor: pointer;
+    height: 20%;
+    padding: 10%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: #00000059 0px 5px 15px;
+}
+
+.buttons:hover {
+    box-shadow: #3c3a3d 6px 2px 16px 0px, #3c3a3d -6px -2px 16px 0px;
+}
+
+#volume{
+    position: absolute;
+    bottom: 20%;
+    -webkit-appearance: none;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: #00000059 0px 5px 15px;
+    background-color: #353336;
+    transform: rotate(-90deg);
+}
+
+#volume::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    width: 10px;
+    height: 16px;
+    background: black;
+    box-shadow: -100vw 0 0 100vw black;
+}
