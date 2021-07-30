@@ -46,7 +46,6 @@ function pause() {
 }
 
 function stop() {
-    stats = "stop";
     music.pause()
     music.currentTime = 0;
 
