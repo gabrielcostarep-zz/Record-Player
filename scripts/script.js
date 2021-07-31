@@ -49,6 +49,7 @@ function pause() {
     rot += 10;
     vinil.style = "transition: 1.5s; transform: rotate(" + rot + "deg)";
 
+    // Parar a animacao
     clearInterval(rotacaoVinil);
     clearInterval(rotacaoAgulha);
 }
@@ -63,6 +64,7 @@ function stop() {
     agulha.style = "transform: rotate(" + ang + "deg)";
     vinil.style = "transform: rotate(" + ang + "deg)";
 
+    // Parar a animacao
     clearInterval(rotacaoVinil);
     clearInterval(rotacaoAgulha);
 }
