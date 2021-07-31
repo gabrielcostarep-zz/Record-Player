@@ -14,7 +14,7 @@ function play() {
         ang = 16;
     }
 
-    agulha.style = "transition: 1.5s; transform: rotate(" + ang + "deg); right: 9%;";
+    agulha.style = "transform: rotate(" + ang + "deg); right: 9%;";
 
     function touch() {
         music.play();
@@ -51,7 +51,7 @@ function stop() {
 
     ang = 0;
 
-    agulha.style = "transition: 1.5s; transform: rotate(" + ang + "deg)";
+    agulha.style = "transform: rotate(" + ang + "deg)";
     vinil.style = "transform: rotate(" + ang + "deg)";
 
     clearInterval(rotacaoVinil);
